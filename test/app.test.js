@@ -1,4 +1,6 @@
-import { Bowerman, Swordsman, Magician, Undead, Zombie, Daemon } from '../src/js/app';
+import {
+  Bowerman, Swordsman, Magician, Undead, Zombie, Daemon,
+} from '../src/js/app';
 
 test('test Bowerman attack', () => {
   const bowerman = new Bowerman();

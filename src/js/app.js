@@ -6,7 +6,7 @@ class Character {
 }
 
 export class Bowerman extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Bowerman');
     this.attack = 25;
     this.defence = 25;
@@ -14,7 +14,7 @@ export class Bowerman extends Character {
 }
 
 export class Swordsman extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Swordsman');
     this.attack = 40;
     this.defence = 10;
@@ -22,7 +22,7 @@ export class Swordsman extends Character {
 }
 
 export class Magician extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Magician');
     this.attack = 10;
     this.defence = 40;
@@ -30,7 +30,7 @@ export class Magician extends Character {
 }
 
 export class Undead extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Undead');
     this.attack = 25;
     this.defence = 25;
@@ -38,7 +38,7 @@ export class Undead extends Character {
 }
 
 export class Zombie extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Undead');
     this.attack = 40;
     this.defence = 10;
@@ -46,10 +46,9 @@ export class Zombie extends Character {
 }
 
 export class Daemon extends Character {
-  constructor(attack, defence) {
+  constructor() {
     super('Daemon');
     this.attack = 10;
     this.defence = 40;
   }
 }
-
