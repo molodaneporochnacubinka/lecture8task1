@@ -1,60 +1,55 @@
 class Character {
+  constructor(type) {
+    this.level = 1;
+    this.type = type;
+  }
+}
+
+export class Bowerman extends Character {
   constructor(attack, defence) {
-    this.attack = attack;
-    this.defence = defence;
+    super('Bowerman');
+    this.attack = 25;
+    this.defence = 25;
   }
 }
 
-class Bowerman extends Character {
-  constructor() {
-    super(25, 25);
+export class Swordsman extends Character {
+  constructor(attack, defence) {
+    super('Swordsman');
+    this.attack = 40;
+    this.defence = 10;
   }
 }
 
-class Swordsman extends Character {
-  constructor() {
-    super(40, 10);
+export class Magician extends Character {
+  constructor(attack, defence) {
+    super('Magician');
+    this.attack = 10;
+    this.defence = 40;
   }
 }
 
-class Magician extends Character {
-  constructor() {
-    super(10, 40);
+export class Undead extends Character {
+  constructor(attack, defence) {
+    super('Undead');
+    this.attack = 25;
+    this.defence = 25;
   }
 }
 
-class Undead extends Character {
-  constructor() {
-    super(25, 25);
+export class Zombie extends Character {
+  constructor(attack, defence) {
+    super('Undead');
+    this.attack = 40;
+    this.defence = 10;
   }
 }
 
-class Zombie extends Character {
-  constructor() {
-    super(40, 10);
+export class Daemon extends Character {
+  constructor(attack, defence) {
+    super('Daemon');
+    this.attack = 10;
+    this.defence = 40;
   }
 }
 
-class Daemon extends Character {
-  constructor() {
-    super(10, 40);
-  }
-}
-
-const bowerman = new Bowerman();
-console.log(bowerman);
-
-const swordsman = new Swordsman();
-console.log(swordsman);
-
-const magician = new Magician();
-console.log(magician);
-
-const undead = new Undead();
-console.log(undead);
-
-const zombie = new Zombie();
-console.log(zombie);
-
-const daemon = new Daemon();
-console.log(daemon);
